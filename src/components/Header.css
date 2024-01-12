@@ -1,0 +1,123 @@
+/* Header.css */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background: linear-gradient(to right, #076585, #fff);
+    color: #fff;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    transition: background 0.3s;
+  }
+  
+  img {
+    height: 60px;
+    width: auto;
+    cursor: pointer;
+    transition: opacity 0.3s;
+  }
+  
+  img:hover {
+    opacity: 0.8;
+  }
+  
+  nav {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+  }
+  
+  nav a,
+  button,
+  .contact-button {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+    font-size: 1em;
+    padding: 10px 20px;
+    border-radius: 40px;
+    transition: background-color 0.3s, color 0.3s, box-shadow 0.3s;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  nav a:hover,
+  button:hover,
+  .contact-button:hover {
+    background-color: #4eb1f5;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  button {
+    border: none;
+    outline: none;
+    justify-content: space-between;
+    display: flex;
+  }
+  
+  .user-button:hover,
+  .home-button:hover {
+    background-color: #4bb8f0;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  .contact-button {
+    margin-left: 20px; /* Adjust the margin as needed to create space between buttons */
+  }
+  
+  .icon {
+    margin-right: 10px;
+    font-size: 1.2em;
+  }
+  /* Header.css */
+
+/* Header.css */
+
+.contact-details {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 40px; /* Increased padding for a larger container */
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    max-width: 400px; /* Increased max-width for a larger container */
+    width: 100%;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+  .contact-details.visible {
+    opacity: 1;
+  }
+  
+  .contact-details h2 {
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .contact-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .contact-info p {
+    color: #555;
+    font-size: 1.2em; /* Increased font size for better readability */
+    margin: 10px 0;
+  }
+  
+  .contact-details:hover {
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.3);
+  }
+.icon {
+  margin-right: 10px;
+  font-size: 1.2em;
+}
+  

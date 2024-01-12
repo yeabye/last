@@ -1,0 +1,162 @@
+
+.us-page::-webkit-scrollbar {
+    width: 12px;
+  }
+  
+  .us-page::-webkit-scrollbar-thumb {
+    background-color: #3b926e;
+    border-radius: 10px;
+  }
+  
+  .us-page::-webkit-scrollbar-track {
+    background-color: #57ce7b62;
+  }
+  
+
+.us-page {
+  text-align: center;
+  padding: 20px;
+  position: relative;
+  overflow-y: auto; /* Enable vertical scrolling */
+  max-height: 80vh; /* Set a maximum height, adjust as needed */
+  scrollbar-width: thin; /* Firefox */
+  scrollbar-color: #87b8a3b4 #f1f1f1; /* Firefox */
+  background-color: #d2f5e3a4; /* Updated background color */
+}
+
+  .image-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+ 
+
+ 
+  
+  .image-container img {
+    width: 250px; /* Adjust the size as needed */
+    height: 350px; /* Adjust the size as needed */
+    object-fit: cover;
+    border-radius: 40px;
+  }
+  
+ 
+.image-container {
+  margin: 10px;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  border-radius: 40px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #27553ec0; /* Updated background color */
+}
+.image-container-section {
+  background-color: #f2f2f2; /* Set your desired background color */
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+.image-description {
+  display: none; /* Hide the image description */
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  padding: 10px;
+  text-align: center;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+  
+  .image-popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .popup-content {
+    position: relative;
+    max-width: 24%;
+    max-height: 90%;
+    overflow: hidden;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  .popup-image {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+  }
+  
+  .popup-description {
+    display: none;
+    padding: 20px;
+    text-align: center;
+    font-size: 25px;
+  }
+  
+  .popup-content:hover .popup-description {
+    display: block;
+  }
+  
+  .close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+  }
+  /* Styling for Show More and Show Less buttons */
+  .show-more-button,
+.show-less-button {
+  position: absolute;
+  background-color: rgba(203, 235, 230, 0.7); /* Adjust the alpha value for transparency */
+  color: #fff;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  margin: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s, box-shadow 0.3s;
+}
+
+.show-more-button:hover,
+.show-less-button:hover {
+  background-color: rgba(128, 235, 199, 0.158); /* Adjust the alpha value for transparency */
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+}
+
+  .download-button {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    padding: 8px 12px;
+    background-color: rgba(104, 104, 104, 0.7); /* Use rgba for transparency */
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .download-button:hover {
+    background-color: rgba(41, 128, 185, 0.7); /* Adjust the alpha channel for hover state */
+  }
+  
+  
