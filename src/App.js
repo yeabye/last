@@ -2,6 +2,7 @@
 import React, { useState } from 'react';
 import { BrowserRouter as Router, Routes, Route, Navigate, Link } from 'react-router-dom';
 
+import { SpeedInsights } from '@vercel/speed-insights/react';
 import Home from './components/Home';
 import Login from './components/Login';
 import Header from './components/Header';
@@ -37,6 +38,7 @@ const App = () => {
             element={isLoggedIn ? <Us /> : <Navigate to="/login" />}
           />
         </Routes>
+              <SpeedInsights />
       </div>
     </Router>
   );
